@@ -1,38 +1,72 @@
 # Home Sales Analysis Project
 Author: Justin Giovatto
 ## Overview
-This project analyzes 
+This project analyzes data from a King County house sales dataset. The data will be used to create a linear model that will be used to predict home prices as accurately as possible.  
 ## Business Problem
-Hypothetical Situation:
+Hypothetical Situation: A King County real estate agency is looking to help potential clients determine the true value of their home through the use of a linear model. 
 
 ## Data
-I will analyze data from 
+I will analyze data from the King County house sales dataset below 
 
-data/bom.movie_gross.csv.gz 
->Contains data on films' domestic and foreign gross.
+kc_house_data.csv
 
-data/imdb.title.basics.csv.gz 
->Contains data on titles listed by genres.
+>Contains data on King County homes including:
 
-data/imdb.title.ratings.csv.gz 
->Contains data on films' average ratings.
+>>id - unique identified for a house
 
-data/tmdb.movies.csv.gz 
->Contains data on films' popularity.
+>>dateDate - house was sold
 
-data/tn.movie_budgets.csv.gz 
->Contains data on production budget and worldwide gross data.
+>>pricePrice - is prediction target
+
+>>bedroomsNumber - of Bedrooms/House
+
+>>bathroomsNumber - of bathrooms/bedrooms
+
+>>sqft_livingsquare - footage of the home
+
+>>sqft_lotsquare - footage of the lot
+
+>>floorsTotal - floors (levels) in house
+
+>>waterfront - House which has a view to a waterfront
+
+>>view - Has been viewed
+
+>>condition - How good the condition is ( Overall )
+
+>>grade - overall grade given to the housing unit, based on King County grading system
+
+>>sqft_above - square footage of house apart from basement
+
+>>sqft_basement - square footage of the basement
+
+>>yr_built - Built Year
+
+>>yr_renovated - Year when house was renovated
+
+>>zipcode - zip
+
+>>lat - Latitude coordinate
+
+>>long - Longitude coordinate
+
+>>sqft_living15 - The square footage of interior housing living space for the nearest 15 neighbors
+
+>>sqft_lot15 - The square footage of the land lots of the nearest 15 neighbors
+
 ## Methods
-Using specific columns from the data provided
+Using specific columns from the data provided I will build four unique linear models using different features from the data provided. I will then split the data into training and testing data. The models will be trained using the training data and then evaluated on the testing data to determine their accuracy. The accuracy of these models will be determined mainly by r-squared, mean absoluate error, mean squared error, and root mean squared error. After determining the accuracy of these model I will then evaluate the coefficients in order to determine which features are most important in determining true home value.   
 
 ## Results & Conclusions  
 
-Based on the analysis, my three main business recommendations are as follows:
+Based on the analysis, my main business recommendations are as follows:
 
-
+1. Zip Codes appear to be the most important feature in determining true home value according to the models.
+2. Square foot living/square foot above tend to be the second most important feature.
+3. Bathrooms and Home Grade also appear to be fairly significant features in determining home price.
 
 ## For More Information
-See the full analysis in the [Jupyter Notebook](http://localhost:8888/notebooks/movie-analysis-project/movie-analysis.ipynb) 
+See the full analysis in the [Jupyter Notebook](https://github.com/jmg0144/home-sales-analysis/blob/main/home-sales-analysis.ipynb) 
 
 For additional information contact Justin Giovatto at justin.giovatto@gmail.com
 
@@ -41,6 +75,6 @@ For additional information contact Justin Giovatto at justin.giovatto@gmail.com
 
 ├── README.md
 
-├── Movie_Analysis_Presentation.pdf
+├── Home_Sales_Analysis_Presentation.pdf
 
-└── movie-analysis.ipynb
+└── home-sales-analysis.ipynb
