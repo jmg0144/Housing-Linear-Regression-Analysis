@@ -59,10 +59,12 @@ Using specific columns from the data provided I will build four unique linear mo
 
 ## Results & Conclusions  
 
+The final model on average was able to predict home prices within $77,528 of the true home price. The R-squared for the final model was .801, with a Skew of 1.324, and Kurtosis of 9.326. The model also produced a Mean Squared Error of 12,404,565,078 as well as a Root Mean Squared Error of 111,375.
+
 Based on the analysis, my main business recommendations are as follows:
 
 1. Zip Codes appear to be the most important feature in determining true home value according to the models.
-2. Square foot living/square foot above tend to be the second most important feature.
+2. Square foot living/square foot above/sum square foot living tend to be the second most important feature.
 3. Bathrooms and Home Grade also appear to be fairly significant features in determining home price.
 
 ## For More Information
